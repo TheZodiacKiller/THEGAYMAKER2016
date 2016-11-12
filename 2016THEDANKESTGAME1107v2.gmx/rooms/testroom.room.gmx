@@ -3,8 +3,8 @@
   <caption></caption>
   <width>1024</width>
   <height>768</height>
-  <vsnap>1</vsnap>
-  <hsnap>1</hsnap>
+  <vsnap>4</vsnap>
+  <hsnap>16</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -51,7 +51,7 @@
     <view visible="0" objName="&lt;undefined&gt;" xview="0" yview="0" wview="1024" hview="768" xport="0" yport="0" wport="1024" hport="768" hborder="32" vborder="32" hspeed="-1" vspeed="-1"/>
   </views>
   <instances>
-    <instance objName="obj_wall" x="0" y="304" name="inst_4422C6E5" locked="0" code="" scaleX="32" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="0" y="300" name="inst_4422C6E5" locked="0" code="" scaleX="32" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_forestspider" x="352" y="384" name="inst_02B27193" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_forestspider" x="512" y="448" name="inst_4E62AD99" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_forestspider" x="608" y="384" name="inst_CBFC54C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
@@ -298,6 +298,10 @@
     <tile bgName="bg_grassdirtstonepalette" x="342" y="505" w="48" h="20" xo="150" yo="364" id="10002069" name="inst_3941E325" depth="999998" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_grassdirtstonepalette" x="386" y="433" w="48" h="20" xo="150" yo="364" id="10002070" name="inst_44249695" depth="999998" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
     <tile bgName="bg_grassdirtstonepalette" x="159" y="529" w="48" h="20" xo="150" yo="364" id="10002071" name="inst_F75B0065" depth="999998" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_forestback" x="0" y="176" w="400" h="200" xo="0" yo="0" id="10002087" name="inst_9CAC5340" depth="999997" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_forestback" x="256" y="176" w="400" h="200" xo="0" yo="0" id="10002088" name="inst_F564F0EC" depth="999997" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_forestback" x="512" y="176" w="400" h="200" xo="0" yo="0" id="10002089" name="inst_2C80ED6F" depth="999997" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
+    <tile bgName="bg_forestback" x="768" y="176" w="400" h="200" xo="0" yo="0" id="10002090" name="inst_342EE6B7" depth="999997" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>
   </tiles>
   <PhysicsWorld>-1</PhysicsWorld>
   <PhysicsWorldTop>0</PhysicsWorldTop>

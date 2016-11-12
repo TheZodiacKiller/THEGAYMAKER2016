@@ -43,6 +43,7 @@
     <background>background\bg_grasspalette</background>
     <background>background\bg_stonepalette</background>
     <background>background\bg_grassdirtstonepalette</background>
+    <background>background\bg_forestback</background>
   </backgrounds>
   <paths name="paths"/>
   <scripts name="scripts">
