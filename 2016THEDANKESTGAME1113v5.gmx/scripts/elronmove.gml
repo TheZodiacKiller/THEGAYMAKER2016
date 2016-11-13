@@ -97,7 +97,10 @@ if sprite_index != spr_elronrun {
         state = elronh1v1;
         }
 }
+//LIGHT DASH ATTACK
 if (sprite_index == spr_elronrun) && (la_key) {
     image_index = 0;
+    spd = 1.35;
+    dash = false;
     state = elrondashatt;
     }

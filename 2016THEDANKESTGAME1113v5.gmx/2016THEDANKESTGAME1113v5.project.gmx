@@ -31,6 +31,7 @@
         <sprite>sprites\spr_elronidleaction</sprite>
         <sprite>sprites\spr_elronrun</sprite>
         <sprite>sprites\spr_elronwalk</sprite>
+        <sprite>sprites\spr_elrondashattack</sprite>
         <sprites name="ELRON LIGHT ATTACKS">
           <sprite>sprites\spr_elronL1</sprite>
           <sprite>sprites\spr_elronL2</sprite>
@@ -42,7 +43,7 @@
           <sprite>sprites\spr_elronH1V2</sprite>
           <sprite>sprites\spr_elronH1V3</sprite>
         </sprites>
-        <sprite>sprites\spr_elrondashattack</sprite>
+        <sprite>sprites\spr_elronbolt</sprite>
       </sprites>
     </sprites>
   </sprites>
@@ -86,6 +87,7 @@
     <object>objects\obj_elron</object>
     <object>objects\obj_wall</object>
     <object>objects\obj_forestspider</object>
+    <object>objects\obj_spiderqueen</object>
     <object>objects\o_player</object>
     <object>objects\o_enemyhost</object>
   </objects>

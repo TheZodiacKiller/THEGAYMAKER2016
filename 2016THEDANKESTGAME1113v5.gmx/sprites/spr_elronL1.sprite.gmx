@@ -9,7 +9,7 @@
   <bboxmode>0</bboxmode>
   <bbox_left>1</bbox_left>
   <bbox_right>36</bbox_right>
-  <bbox_top>7</bbox_top>
+  <bbox_top>10</bbox_top>
   <bbox_bottom>29</bbox_bottom>
   <HTile>0</HTile>
   <VTile>0</VTile>
@@ -30,8 +30,5 @@
     <frame index="7">images\spr_elronL1_7.png</frame>
     <frame index="8">images\spr_elronL1_8.png</frame>
     <frame index="9">images\spr_elronL1_9.png</frame>
-    <frame index="10">images\spr_elronL1_10.png</frame>
-    <frame index="11">images\spr_elronL1_11.png</frame>
-    <frame index="12">images\spr_elronL1_12.png</frame>
   </frames>
 </sprite>
