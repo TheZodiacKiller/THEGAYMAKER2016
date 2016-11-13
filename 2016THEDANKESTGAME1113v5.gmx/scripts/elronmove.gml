@@ -28,6 +28,7 @@ phy_position_y+=vspd/1.5;
         image_speed = .06;
         }
         
+        
 if (dash == false) {
     if (hspd > 0) {
         sprite_index = spr_elronwalk;
@@ -86,11 +87,17 @@ if (dleft_key) || (dright_key) {
     
     
 //LIGHT & HEAVY ATTACKS
-if (la_key) {
+if sprite_index != spr_elronrun {
+    if (la_key) {
+        image_index = 0;
+        state = elronl1;
+        }
+    if (ha_key) {
+        image_index = 0;
+        state = elronh1v1;
+        }
+}
+if (sprite_index == spr_elronrun) && (la_key) {
     image_index = 0;
-    state = elronl1;
-    }
-if (ha_key) {
-    image_index = 0;
-    state = elronh1v1;
+    state = elrondashatt;
     }

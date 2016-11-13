@@ -35,7 +35,7 @@ state = forestspider_idle;
 alarm[0] = room_speed*irandom_range(2,5);
 sight = 120;
 attrange = 20;
-attspd = 0; //Script set to attack every 3 seconds.
+attspd = 120; //Script set to attack every 2 seconds. [BROKEN RN]
 //Where will the enemy go to
 targetx = 0;
 targety = 0;
