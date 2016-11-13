@@ -25,22 +25,22 @@ if (hspd == 0) && (vspd == 0) {
     image_speed = .06;
     }
 if (hspd > 0) {
-    sprite_index = spr_elronwalk;
+    sprite_index = spr_elronrun;
     image_xscale = 1;
     image_speed = .12;
 } 
 if (hspd < 0) {
-    sprite_index = spr_elronwalk;
+    sprite_index = spr_elronrun;
     image_xscale = -1;
     image_speed = .12;
 }
 if (vspd != 0) && image_xscale == 1 {
-    sprite_index = spr_elronwalk;
+    sprite_index = spr_elronrun;
     image_xscale = 1;
     image_speed = .12;
     }
 if (vspd != 0) && image_xscale == -1 {
-    sprite_index = spr_elronwalk;
+    sprite_index = spr_elronrun;
     image_xscale = -1;
     image_speed = .12;
     }
