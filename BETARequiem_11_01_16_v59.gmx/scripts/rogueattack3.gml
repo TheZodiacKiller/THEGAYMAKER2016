@@ -1,0 +1,56 @@
+///rogueattack3
+
+image_speed = 0.35;
+
+var dir = point_direction(x,y,mouse_x,mouse_y)
+//If sprite index is equal to a case, do something
+if dir < 45 && dir > 0 || dir > 315 && dir < 360   
+    sprite_index = spr_rogueatt3Right;
+
+
+
+if dir < 135 && dir > 45
+    sprite_index = spr_rogueatt3Up;
+
+
+if dir > 135 && dir < 225
+    sprite_index = spr_rogueatt3Left;
+
+
+
+if dir < 315 && dir > 225
+    sprite_index = spr_rogueatt3Down;
+    
+    
+if image_index >= 1 && attack3 == false {
+var xx = 0;
+var yy = 0;
+switch (sprite_index) {
+    case spr_rogueatt3Right:
+        xx = x+24;
+        yy = y;
+        break;
+    
+    case spr_rogueatt3Left:
+        xx = x-24;
+        yy = y;
+    break;
+    
+    case spr_rogueatt3Up:
+        xx = x;
+        yy = y-24;
+    break;
+    
+    case spr_rogueatt3Down:
+        xx = x;
+        yy = y+24;
+    break;
+
+}
+    var damage = instance_create(xx, yy, o_roguedamage);
+    //Tells the damage object that THE PLAYER (id) is the creator
+    damage.creator = id;
+    attack3 = true;
+}
+
+
