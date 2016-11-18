@@ -25,8 +25,13 @@
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>webup = 240; //Delay till Melindrigue is able to web away.
-escape = 90 //Distance at which Melindrigue will web away if avaliable.
+            <string>
+//Unique Stats
+webup = 600; //Delay till Melindrigue is able to web away.
+escape = 90; //Distance at which Melindrigue will web away if avaliable.
+attspd = 60; //Acid spit delay
+summon = 1200; //Summoning delay (1200 TO SUMMON)
+
 event_inherited();
 phy_fixed_rotation = true;
 image_speed = .06;
@@ -38,11 +43,33 @@ sight = 300;
 checkforplayer = false;
 attrange = 150;
 
-attspd = 120; //Script set to attack every 2 seconds.
+
 //Where will the enemy go to
 targetx = 0;
 targety = 0;
 </string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string></string>
           </argument>
         </arguments>
       </action>
@@ -89,6 +116,7 @@ targety = 0;
             <kind>1</kind>
             <string>event_inherited();
 attspd += 1;
+summon += 1;
 webup += 1;
 script_execute(state);
 
@@ -114,10 +142,23 @@ script_execute(state);
         <arguments>
           <argument>
             <kind>1</kind>
-            <string>if (state == spiderqueen_attack) {
-    state = spiderqueen_chase;
-    checkforplayer = false;
+            <string>if (state == spiderqueen_attack) || (state == spiderqueen_webattack) {
+    if (webup &gt;= 600) {
+        image_index = 2;  
+        webup = 0;
+        state = spiderqueen_webup;
+        checkforplayer = false;
+        }
     }
+if state == spiderqueen_webdown
+    state = spiderqueen_chase;
+
+if state == spiderqueen_summon {
+    instance_create(x, y+10,obj_forestspider);
+    instance_create(x+10, y-10,obj_forestspider);
+    instance_create(x-10, y-10,obj_forestspider);
+    }
+
 </string>
           </argument>
         </arguments>
@@ -130,7 +171,7 @@ script_execute(state);
   <PhysicsObjectDensity>0.5</PhysicsObjectDensity>
   <PhysicsObjectRestitution>0.100000001490116</PhysicsObjectRestitution>
   <PhysicsObjectGroup>0</PhysicsObjectGroup>
-  <PhysicsObjectLinearDamping>0.100000001490116</PhysicsObjectLinearDamping>
+  <PhysicsObjectLinearDamping>10</PhysicsObjectLinearDamping>
   <PhysicsObjectAngularDamping>0.100000001490116</PhysicsObjectAngularDamping>
   <PhysicsObjectFriction>30</PhysicsObjectFriction>
   <PhysicsObjectAwake>-1</PhysicsObjectAwake>

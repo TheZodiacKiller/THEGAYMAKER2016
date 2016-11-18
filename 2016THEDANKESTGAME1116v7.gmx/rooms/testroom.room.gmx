@@ -4,7 +4,7 @@
   <width>1024</width>
   <height>768</height>
   <vsnap>4</vsnap>
-  <hsnap>16</hsnap>
+  <hsnap>8</hsnap>
   <isometric>0</isometric>
   <speed>60</speed>
   <persistent>0</persistent>
@@ -52,15 +52,11 @@
   </views>
   <instances>
     <instance objName="obj_wall" x="0" y="300" name="inst_4422C6E5" locked="0" code="" scaleX="32" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_forestspider" x="352" y="384" name="inst_02B27193" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_forestspider" x="512" y="448" name="inst_4E62AD99" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_forestspider" x="608" y="384" name="inst_CBFC54C4" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="0" y="544" name="inst_0F0473BA" locked="0" code="" scaleX="32" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_forestspider" x="416" y="480" name="inst_949EA1B8" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_forestspider" x="352" y="384" name="inst_58C16B97" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
-    <instance objName="obj_forestspider" x="448" y="416" name="inst_95E2BA44" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_elron" x="32" y="416" name="inst_DAA76B7C" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
     <instance objName="obj_spiderqueen" x="464" y="364" name="inst_72298335" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="-24" y="300" name="inst_0A018C0C" locked="0" code="" scaleX="1.29032254219055" scaleY="8.625" colour="4294967295" rotation="0"/>
+    <instance objName="obj_wall" x="1016" y="300" name="inst_A0E3A1EC" locked="0" code="" scaleX="1" scaleY="8.625" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_grassdirtstonepalette" x="176" y="525" w="80" h="34" xo="12" yo="260" id="10001942" name="inst_49DC63BA" depth="1000000" locked="0" colour="4294967295" scaleX="1" scaleY="1"/>

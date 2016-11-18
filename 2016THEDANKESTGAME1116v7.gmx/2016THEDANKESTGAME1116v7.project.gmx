@@ -81,6 +81,8 @@
         <script>scripts\spiderqueen_idle.gml</script>
         <script>scripts\spiderqueen_checkforplayer.gml</script>
         <script>scripts\spiderqueen_attack.gml</script>
+        <script>scripts\spiderqueen_summon.gml</script>
+        <script>scripts\spiderqueen_webattack.gml</script>
         <script>scripts\spiderqueen_webup.gml</script>
       </scripts>
     </scripts>
