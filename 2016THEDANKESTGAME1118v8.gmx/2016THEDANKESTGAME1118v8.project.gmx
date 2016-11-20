@@ -14,6 +14,7 @@
         <sprite>sprites\spr_forestspiderdeath</sprite>
         <sprite>sprites\spr_forestspiderwalk</sprite>
         <sprite>sprites\spr_forestspider</sprite>
+        <sprite>sprites\spr_forestspiderhit</sprite>
       </sprites>
       <sprites name="SPIDER QUEEN">
         <sprite>sprites\spr_spiderqueenidle</sprite>
@@ -80,6 +81,7 @@
         <script>scripts\forestspider_wander.gml</script>
         <script>scripts\forestspider_attack.gml</script>
         <script>scripts\forestspider_idle.gml</script>
+        <script>scripts\forestspider_hit.gml</script>
         <scripts name="FOREST SPIDER HELP SCRIPT">
           <script>scripts\enemy_choose_next_state.gml</script>
           <script>scripts\enemy_checkforplayer.gml</script>
@@ -132,6 +134,7 @@
       <object>objects\o_enemyhost</object>
       <object>objects\obj_wall</object>
       <object>objects\o_elronhitbox</object>
+      <object>objects\o_playerhitbox</object>
       <object>objects\o_elronhitbox2</object>
     </objects>
   </objects>

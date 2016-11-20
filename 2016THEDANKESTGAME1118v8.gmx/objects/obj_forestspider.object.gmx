@@ -32,6 +32,7 @@ image_speed = .06;
 spd = .25;
 len = 0;
 checkforplayer = false;
+hitcheck = false;
 state = forestspider_idle;
 alarm[0] = room_speed*irandom_range(2,5);
 sight = 120;
@@ -40,6 +41,31 @@ attspd = 120; //Script set to attack every 2 seconds.
 //Where will the enemy go to
 targetx = 0;
 targety = 0;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="2" enumb="1">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>///Hitstun Alarm
+state = forestspider_chase;
+hitcheck = false;
 </string>
           </argument>
         </arguments>
@@ -88,6 +114,29 @@ targety = 0;
             <string>event_inherited();
 script_execute(state);
 attspd += 1;
+</string>
+          </argument>
+        </arguments>
+      </action>
+    </event>
+    <event eventtype="4" ename="o_playerhitbox">
+      <action>
+        <libid>1</libid>
+        <id>603</id>
+        <kind>7</kind>
+        <userelative>0</userelative>
+        <isquestion>0</isquestion>
+        <useapplyto>-1</useapplyto>
+        <exetype>2</exetype>
+        <functionname></functionname>
+        <codestring></codestring>
+        <whoName>self</whoName>
+        <relative>0</relative>
+        <isnot>0</isnot>
+        <arguments>
+          <argument>
+            <kind>1</kind>
+            <string>state = forestspider_hit;
 </string>
           </argument>
         </arguments>

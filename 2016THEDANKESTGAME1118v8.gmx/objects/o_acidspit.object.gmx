@@ -82,7 +82,7 @@ depth = -y;
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="o_player">
+    <event eventtype="4" ename="obj_wall">
       <action>
         <libid>1</libid>
         <id>603</id>
@@ -106,7 +106,7 @@ instance_destroy();
         </arguments>
       </action>
     </event>
-    <event eventtype="4" ename="obj_wall">
+    <event eventtype="4" ename="o_player">
       <action>
         <libid>1</libid>
         <id>603</id>
