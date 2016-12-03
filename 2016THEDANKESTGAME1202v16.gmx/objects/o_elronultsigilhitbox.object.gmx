@@ -26,9 +26,11 @@
           <argument>
             <kind>1</kind>
             <string>//Determine power of knockback
-knockback = 25;
+knockback = 200;
 creator = noone;
 alarm[0] = 1;
+setup = 70 + global.int * 5; // 500% INT (PROCS 3 TIMES)
+dmg = irandom_range(setup*0.8,setup*1.2);
 </string>
           </argument>
         </arguments>
@@ -76,12 +78,15 @@ alarm[0] = 1;
             <kind>1</kind>
             <string>if instance_exists(o_player) {
     if (other.id != creator) &amp;&amp; (instance_exists(other)) {
+        other.hp -= dmg;
         //Determine direction of linear knockback
         if o_player.image_xscale == 1
             var xforce = lengthdir_x(knockback, 0);   
         if o_player.image_xscale == -1
             var xforce = lengthdir_x(knockback, 180);
-            
+        var number = instance_create(other.x, other.y, o_damagenumber);
+        number.creator = id;
+        number.str = string(dmg);
         //Creates mark on this attack   
         if instance_exists(o_elronBbuff) {
             var mark = instance_create(other.x,other.y,o_elronBmark);

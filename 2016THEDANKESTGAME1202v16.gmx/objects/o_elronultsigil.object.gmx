@@ -28,6 +28,7 @@
             <string>trigger = false;
 alarm[0] = 300;
 image_speed = .35;
+pulse = false;
 </string>
           </argument>
         </arguments>
@@ -76,9 +77,12 @@ image_speed = .35;
             <string>if trigger == false &amp;&amp; image_index &gt;= 14 {
     image_index = 0;
     }
-if trigger == true &amp;&amp; image_index &gt;= 26 &amp;&amp; image_index &lt; 29
+if trigger == true &amp;&amp; pulse == false &amp;&amp; image_index &gt;= 26 &amp;&amp; image_index &lt; 29 {
     var a = instance_create(x,y,o_elronultsigilhitbox);
+    pulse = true;
+    }
 
+    
 if trigger == true &amp;&amp; image_index &gt;= 15 &amp;&amp; image_index &lt; 20
     var a = instance_create(x,y,o_elronultpullhitbox);
 </string>
