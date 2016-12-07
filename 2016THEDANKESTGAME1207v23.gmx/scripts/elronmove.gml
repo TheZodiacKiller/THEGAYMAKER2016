@@ -117,7 +117,7 @@ if a1_key {
     }
 
 //SKILL B
-if a2_key && !instance_exists(o_elronBfx) {
+if a2_key && !instance_exists(o_elronBbuff) {
     instance_create(x,y,o_elronBbuff);
     instance_create(x,y,o_elronBfx);
     

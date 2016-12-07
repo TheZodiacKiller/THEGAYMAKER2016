@@ -137,6 +137,12 @@
       <sprite>sprites\spr_orctavern</sprite>
       <sprite>sprites\spr_orctower</sprite>
       <sprite>sprites\spr_spitroast</sprite>
+      <sprite>sprites\spr_forestentranceUP</sprite>
+      <sprite>sprites\spr_forestentranceRIGHT</sprite>
+      <sprite>sprites\spr_forestentranceLEFT</sprite>
+      <sprite>sprites\spr_ruinsplatform</sprite>
+      <sprite>sprites\spr_ruins1</sprite>
+      <sprite>sprites\spr_ruins2</sprite>
     </sprites>
   </sprites>
   <backgrounds name="background">
@@ -146,9 +152,12 @@
     <background>background\bg_dirtpalette</background>
     <background>background\bg_grasspalette</background>
     <background>background\bg_hugeforestpalette</background>
+    <background>background\bg_bushpalette</background>
     <background>background\bg_grassdirtstonepalette</background>
     <background>background\bg_extendedforestpalette</background>
     <background>background\bg_forestback</background>
+    <background>background\bg_forestside</background>
+    <background>background\bg_ruinsplatform</background>
   </backgrounds>
   <paths name="paths">
     <path>paths\path0</path>
@@ -337,6 +346,11 @@
     </objects>
     <objects name="ENVIROMENT">
       <object>objects\o_bonfire</object>
+      <object>objects\o_ruins1</object>
+      <object>objects\o_ruins2</object>
+      <object>objects\o_forestentranceUP</object>
+      <object>objects\o_forestentranceR</object>
+      <object>objects\o_forestentranceL</object>
       <object>objects\o_orctower</object>
       <object>objects\o_orctavern</object>
       <object>objects\o_tentR</object>
@@ -351,9 +365,11 @@
     </objects>
   </objects>
   <rooms name="rooms">
+    <rooms name="DARK FOREST">
+      <room>rooms\startroom</room>
+    </rooms>
     <room>rooms\testroom</room>
     <room>rooms\testextraroom</room>
-    <room>rooms\startroom</room>
   </rooms>
   <help>
     <rtf>help.rtf</rtf>
