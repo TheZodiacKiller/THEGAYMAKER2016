@@ -16,8 +16,8 @@
   <clearDisplayBuffer>-1</clearDisplayBuffer>
   <makerSettings>
     <isSet>-1</isSet>
-    <w>1936</w>
-    <h>1096</h>
+    <w>1016</w>
+    <h>600</h>
     <showGrid>0</showGrid>
     <showObjects>-1</showObjects>
     <showTiles>-1</showTiles>
@@ -27,8 +27,8 @@
     <deleteUnderlyingObj>0</deleteUnderlyingObj>
     <deleteUnderlyingTiles>-1</deleteUnderlyingTiles>
     <page>0</page>
-    <xoffset>974</xoffset>
-    <yoffset>1039</yoffset>
+    <xoffset>337</xoffset>
+    <yoffset>618</yoffset>
   </makerSettings>
   <backgrounds>
     <background visible="-1" foreground="0" name="" x="0" y="0" htiled="-1" vtiled="-1" hspeed="0" vspeed="0" stretch="0"/>
@@ -68,6 +68,7 @@
     <instance objName="obj_wall" x="588" y="460" name="inst_B28F46F2" locked="0" code="" scaleX="0.8125" scaleY="0.3125" colour="4294967295" rotation="0"/>
     <instance objName="obj_wall" x="606" y="484" name="inst_708454D6" locked="0" code="" scaleX="0.6875" scaleY="0.1875" colour="4294967295" rotation="0"/>
     <instance objName="o_roomhb" x="610" y="476" name="inst_848F820D" locked="0" code="next_room = forestroom1;&#xA;" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
+    <instance objName="o_chest" x="392" y="446" name="inst_2FC7D736" locked="0" code="" scaleX="1" scaleY="1" colour="4294967295" rotation="0"/>
   </instances>
   <tiles>
     <tile bgName="bg_hugeforestpalette" x="-160" y="352" w="288" h="128" xo="272" yo="176" id="10002144" name="inst_1033D2EE" depth="1000011" locked="0" colour="4294967295" scaleX="5" scaleY="4"/>

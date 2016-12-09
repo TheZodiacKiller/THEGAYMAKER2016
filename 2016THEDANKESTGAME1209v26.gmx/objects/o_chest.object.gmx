@@ -52,7 +52,7 @@ open = 20; //Open chest range
           <argument>
             <kind>1</kind>
             <string>if image_alpha &gt; 0
-    image_speed -= .05;
+    image_alpha -= .05;
 else
     instance_destroy();
 alarm[0] = 1;
@@ -79,11 +79,12 @@ alarm[0] = 1;
           <argument>
             <kind>1</kind>
             <string>var dis = point_distance(x,y,o_player.x,o_player.y);
-if dis &lt; open &amp;&amp; o_player.interact_key {
+if dis &lt; open &amp;&amp; o_player.interact_key &amp;&amp; sprite_index == spr_chest {
     image_speed = .15;
     image_index = 0;
     sprite_index = spr_chestopen;
     }
+
 </string>
           </argument>
         </arguments>
@@ -153,8 +154,8 @@ if dis &lt; open &amp;&amp; o_player.interact_key {
           <argument>
             <kind>1</kind>
             <string>if sprite_index == spr_chestopen {
-    image_speed = 0;
-    image_index = image_number - 1;
+    image_speed = 0.001;
+    image_index = 5;
     alarm[0] = 1;
     }
 </string>

@@ -85,6 +85,7 @@ fulldmg = irandom_range(setup*0.8,setup*1.2);
     image_alpha -= 0.02;
 if image_alpha &lt;= 0
     instance_destroy();
+depth = -y;
 </string>
           </argument>
         </arguments>

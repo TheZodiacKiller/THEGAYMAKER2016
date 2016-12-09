@@ -71,6 +71,7 @@
         <sprite>sprites\spr_orcattack</sprite>
         <sprite>sprites\spr_orcthrow</sprite>
         <sprite>sprites\spr_orcaxe</sprite>
+        <sprite>sprites\spr_orcdeath</sprite>
       </sprites>
     </sprites>
     <sprites name="HEROES">
